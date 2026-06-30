@@ -18,15 +18,22 @@ export default function App() {
     <BrowserRouter>
       <Routes>
 
+        {/* Landing Page */}
+        <Route path="/" element={<Home />} />
+
+        {/* Old Bot Page */}
+        <Route path="/bot" element={<Bot />} />
+
+        {/* Dashboard */}
         <Route path="/dashboard" element={<DashboardLayout />}>
-  <Route index element={<Dashboard />} />
-  <Route path="modules" element={<Modules />} />
-  <Route path="commands" element={<Commands />} />
-  <Route path="analytics" element={<Analytics />} />
-  <Route path="logs" element={<Logs />} />
-  <Route path="premium" element={<Premium />} />
-  <Route path="settings" element={<Settings />} />
-</Route>
+          <Route index element={<Dashboard />} />
+          <Route path="modules" element={<Modules />} />
+          <Route path="commands" element={<Commands />} />
+          <Route path="analytics" element={<Analytics />} />
+          <Route path="logs" element={<Logs />} />
+          <Route path="premium" element={<Premium />} />
+          <Route path="settings" element={<Settings />} />
+        </Route>
 
       </Routes>
     </BrowserRouter>
