@@ -2,6 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Bot from "./pages/Bot";
+import Login from "./pages/Login";
+
+// IMPORT DASHBOARD BOT WA KAMU DI SINI
+import BotWaDashboard from "./pages/BotWa"; // Pastikan nama file di folder src/pages/BotWa.jsx sama persis ukurannya
 
 import DashboardLayout from "./layouts/DashboardLayout";
 
@@ -18,13 +22,16 @@ export default function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* Landing Page */}
+        {/* PUBLIC */}
         <Route path="/" element={<Home />} />
-
-        {/* Old Bot Page */}
         <Route path="/bot" element={<Bot />} />
+        
+        {/* JALUR BARU UNTUK DASHBOARD BOT WA KAMU */}
+        <Route path="/botwa" element={<BotWaDashboard />} />
+        
+        <Route path="/login" element={<Login />} />
 
-        {/* Dashboard */}
+        {/* PROTECTED (dashboard nanti) */}
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<Dashboard />} />
           <Route path="modules" element={<Modules />} />
