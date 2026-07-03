@@ -5,7 +5,7 @@ import Bot from "./pages/Bot";
 import Login from "./pages/Login";
 
 // IMPORT DASHBOARD BOT WA KAMU DI SINI
-import BotWaDashboard from "./pages/BotWa"; // Pastikan nama file di folder src/pages/BotWa.jsx sama persis ukurannya
+import BotWaDashboard from "./pages/botwa"; // Pastikan nama file di folder src/pages/BotWa.jsx sama persis ukurannya
 
 import DashboardLayout from "./layouts/DashboardLayout";
 
