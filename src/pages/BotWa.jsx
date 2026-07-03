@@ -83,7 +83,7 @@ export default function BotWaDashboard() {
                 <div class="text-center mb-10">
                     <h1 class="text-3xl md:text-4xl font-extrabold mb-3">Dashboard Bot WhatsApp</h1>
                     <p class="text-slate-400 max-w-md mx-auto text-sm md:text-base">
-                        Data statistik ter-update secara otomatis langsung dari server lokal laptop kamu, Radianza.
+                        Data statistik ter-update secara otomatis langsung dari server Owner.
                     </p>
                 </div>
 
