@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -52,6 +53,13 @@ export default function Navbar() {
           >
             Contact
           </a>
+
+          <Link
+            to="/topup"
+            className="hover:text-cyan-400 transition"
+          >
+            Topup
+          </Link>
 
         </div>
 
