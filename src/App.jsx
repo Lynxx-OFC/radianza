@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import BotWaDashboard from "./pages/BotWa"; // Pastikan nama file di folder src/pages/BotWa.jsx sama persis ukurannya
 
 import DashboardLayout from "./layouts/DashboardLayout";
+import Topup from "./pages/Topup";
 
 import Dashboard from "./pages/dashboard/Dashboard";
 import Modules from "./pages/dashboard/Modules";
@@ -28,6 +29,7 @@ export default function App() {
         
         {/* JALUR BARU UNTUK DASHBOARD BOT WA KAMU */}
         <Route path="/botwa" element={<BotWaDashboard />} />
+        <Route path="/topup" element={<Topup />} />
         
         <Route path="/login" element={<Login />} />
 
