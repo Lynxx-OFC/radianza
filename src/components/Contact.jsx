@@ -33,7 +33,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-20">
 
           <a
-            href="mailto:safarudinradiana@gmail.com"
+            href="mailto:safarudinradianza@gmail.com"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,.35)] transition"
           >
             <Mail size={40} className="mx-auto text-cyan-400 mb-5" />
@@ -43,14 +43,15 @@ export default function Contact() {
             </h3>
 
             <p className="text-slate-400 mt-2">
-              mailto:safarudinradiana@gmail.com
+              Contact me
             </p>
 
           </a>
 
           <a
-            href="https://gitHub.com/"
+            href="https://github.com/Radianzaa/Radianzaa"
             target="_blank"
+            rel="noreferrer"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,.35)] transition"
           >
             <Github size={40} className="mx-auto text-cyan-400 mb-5" />
@@ -60,14 +61,15 @@ export default function Contact() {
             </h3>
 
             <p className="text-slate-400 mt-2">
-              gitHub.com/radianza
+              View repo
             </p>
 
           </a>
 
           <a
-            href="https://instagram.com/"
+            href="https://www.instagram.com/radianza_"
             target="_blank"
+            rel="noreferrer"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,.35)] transition"
           >
             <Instagram size={40} className="mx-auto text-cyan-400 mb-5" />
@@ -83,7 +85,9 @@ export default function Contact() {
           </a>
 
           <a
-            href="#"
+            href="https://discord.gg/hdDwJ3Z5Zq"
+            target="_blank"
+            rel="noreferrer"
             className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 hover:border-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,.35)] transition"
           >
             <MessageCircle size={40} className="mx-auto text-cyan-400 mb-5" />
@@ -93,7 +97,7 @@ export default function Contact() {
             </h3>
 
             <p className="text-slate-400 mt-2">
-              radianza
+              Join server
             </p>
 
           </a>
