@@ -1,6 +1,16 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Gamepad2, Sparkles, CreditCard, ShieldCheck, ArrowRight, Clock3, Shield, Gift, Wallet } from "lucide-react";
+import {
+  Gamepad2,
+  Sparkles,
+  CreditCard,
+  ShieldCheck,
+  Clock3,
+  Shield,
+  Gift,
+  Wallet,
+  Zap,
+} from "lucide-react";
 import Card from "../components/ui/Card";
 import Button from "../components/ui/Button";
 
@@ -32,10 +42,34 @@ const games = [
 ];
 
 const packages = [
-  { label: "Starter Pack", amount: "50 Diamonds", price: "Rp 25.000", bonus: "+5 Bonus", badge: "Best for pemula" },
-  { label: "Popular Pack", amount: "120 Diamonds", price: "Rp 55.000", bonus: "+12 Bonus", badge: "Best seller" },
-  { label: "Pro Pack", amount: "250 Diamonds", price: "Rp 108.000", bonus: "+28 Bonus", badge: "Paling value" },
-  { label: "Legend Pack", amount: "520 Diamonds", price: "Rp 215.000", bonus: "+55 Bonus", badge: "Top pick" },
+  {
+    label: "Starter Pack",
+    amount: "50 Diamonds",
+    price: "Rp 25.000",
+    bonus: "+5 Bonus",
+    badge: "Best for pemula",
+  },
+  {
+    label: "Popular Pack",
+    amount: "120 Diamonds",
+    price: "Rp 55.000",
+    bonus: "+12 Bonus",
+    badge: "Best seller",
+  },
+  {
+    label: "Pro Pack",
+    amount: "250 Diamonds",
+    price: "Rp 108.000",
+    bonus: "+28 Bonus",
+    badge: "Paling value",
+  },
+  {
+    label: "Legend Pack",
+    amount: "520 Diamonds",
+    price: "Rp 215.000",
+    bonus: "+55 Bonus",
+    badge: "Top pick",
+  },
 ];
 
 const payments = [
@@ -56,7 +90,8 @@ export default function Topup() {
 
   return (
     <main className="min-h-screen bg-[#070B14] text-white overflow-hidden">
-      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-slate-900/90 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-slate-900/95 to-transparent pointer-events-none" />
+
       <div className="relative max-w-7xl mx-auto px-6 py-24 lg:py-28">
         <div className="grid gap-10 lg:grid-cols-[1.45fr_1fr] items-start">
           <section>
@@ -65,32 +100,39 @@ export default function Topup() {
             </span>
 
             <h1 className="text-5xl sm:text-6xl font-black leading-tight">
-              Top-up game favoritmu dengan cepat dan aman.
+              Top-up game favoritmu dengan cepat, aman, dan tanpa ribet.
             </h1>
 
             <p className="mt-6 max-w-2xl text-slate-400 text-lg leading-8">
               Layanan top-up premium untuk Mobile Legends, Free Fire, PUBG Mobile, Genshin Impact, dan lebih banyak lagi.
-              Pilih paket, tentukan metode pembayaran, dan dapatkan konfirmasi instan.
+              Pilih game, paket, dan metode pembayaran dalam satu pengalaman checkout yang cepat.
             </p>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              <Card className="p-6 bg-slate-900/70 border-white/10">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-300 mb-4">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
-                <h2 className="font-semibold text-lg">Aman dan Terpercaya</h2>
-                <p className="mt-2 text-slate-400 text-sm">Transaksi terenkripsi dengan proteksi penuh setiap saat.</p>
-              </div>
-              <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+                <h2 className="font-semibold text-lg">Aman</h2>
+                <p className="mt-2 text-slate-400 text-sm">Pembayaran terenkripsi dengan verifikasi otomatis.</p>
+              </Card>
+              <Card className="p-6 bg-slate-900/70 border-white/10">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-300 mb-4">
-                  <CreditCard className="w-5 h-5" />
+                  <Zap className="w-5 h-5" />
                 </div>
-                <h2 className="font-semibold text-lg">Banyak Metode</h2>
-                <p className="mt-2 text-slate-400 text-sm">Dukungan e-wallet, bank transfer, pulsa, dan kartu kredit.</p>
-              </div>
+                <h2 className="font-semibold text-lg">Instan</h2>
+                <p className="mt-2 text-slate-400 text-sm">Top-up diproses segera, langsung masuk ke akunmu.</p>
+              </Card>
+              <Card className="p-6 bg-slate-900/70 border-white/10">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-300 mb-4">
+                  <Clock3 className="w-5 h-5" />
+                </div>
+                <h2 className="font-semibold text-lg">Support 24/7</h2>
+                <p className="mt-2 text-slate-400 text-sm">Tim siap membantu kapan pun kamu butuh bantuan.</p>
+              </Card>
             </div>
 
-            <div className="mt-16">
+            <div className="mt-16 rounded-[40px] border border-white/10 bg-slate-950/80 p-8">
               <div className="flex flex-wrap items-center gap-3 justify-between">
                 <div>
                   <p className="text-sm uppercase tracking-[0.28em] text-cyan-300/80">Game</p>
@@ -135,10 +177,10 @@ export default function Topup() {
               <div className="rounded-[40px] border border-white/10 bg-slate-950/80 p-8">
                 <div className="flex items-center gap-4 text-cyan-300">
                   <Gift className="w-5 h-5" />
-                  <span className="uppercase tracking-[0.25em] text-sm text-cyan-300/90">Paket topup</span>
+                  <span className="uppercase tracking-[0.25em] text-sm text-cyan-300/90">Paket Top-up</span>
                 </div>
                 <h3 className="mt-5 text-3xl font-bold">Pilih paket terbaikmu</h3>
-                <p className="mt-4 text-slate-400 leading-7">Setiap paket dirancang untuk memenuhi kebutuhan gaya bermainmu, mulai dari nilai hemat sampai bonus ekstra.</p>
+                <p className="mt-4 text-slate-400 leading-7">Setiap paket dirancang untuk memenuhi kebutuhan gaya bermainmu, dari hemat hingga bonus ekstra.</p>
 
                 <div className="mt-8 space-y-4">
                   {packages.map((pack, index) => (
