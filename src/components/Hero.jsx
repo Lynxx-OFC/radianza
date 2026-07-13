@@ -89,20 +89,23 @@ export default function Hero() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-5">
 
-          <button className="group bg-white text-black rounded-2xl px-8 py-4 font-bold hover:scale-105 transition">
-
+          <a
+            href="#projects"
+            className="group inline-flex items-center justify-center bg-white text-black rounded-2xl px-8 py-4 font-bold hover:scale-105 transition"
+          >
             View Projects
-
             <ArrowRight
               className="inline ml-2 group-hover:translate-x-1 transition"
               size={18}
             />
+          </a>
 
-          </button>
-
-          <button className="border border-white/20 bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-4 hover:bg-white/10 transition">
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center border border-white/20 bg-white/5 backdrop-blur-xl rounded-2xl px-8 py-4 hover:bg-white/10 transition"
+          >
             Contact Me
-          </button>
+          </a>
 
         </div>
 
